@@ -1,17 +1,17 @@
 export class Character {
-    name:string = ""
-    health:number
+    protected name:string = ""
+    protected health:number
     constructor(name:string,health:number = 100){
         this.name = name
         this.health = health
     }
-    getName(){
+    public getName(){
         return this.name
     }
-    get getHealth():number{
+    public getHealth():number{
         return this.health
     }
-    receiveDamage(damage: number){
+    public receiveDamage(damage: number){
         this.health -= damage
         if(this.health < 0){
             this.health = 0

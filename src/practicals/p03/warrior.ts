@@ -1,7 +1,7 @@
 import { Character } from "./character";
 
 export class Warrior extends Character {
-  weapon: string;
+  private weapon: string;
 
   constructor(name: string, weapon: string, health: number = 100) {
     super(name, health);
