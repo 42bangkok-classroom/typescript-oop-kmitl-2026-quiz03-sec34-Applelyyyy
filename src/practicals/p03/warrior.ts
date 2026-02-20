@@ -3,17 +3,17 @@ import { Character } from "./character";
 export class Warrior extends Character {
   private weapon: string;
 
-  constructor(name: string, weapon: string, health: number = 100) {
+  constructor(name: string, weapon: string, health: number) {
     super(name, health);
     this.weapon = weapon;
   }
 
-  getWeapon(): string {
+  public getWeapon(): string {
     return this.weapon;
   }
 
-  override receiveDamage(damage: number): void {
+  public receiveDamage(damage: number): void {
     const reducedDamage = damage * 0.9;
-    super.receiveDamage(reducedDamage);
+    this.health -= reducedDamage;
   }
 }
