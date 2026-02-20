@@ -6,7 +6,7 @@ user.setFirstname("John");
 user.setLastname("Doe");
 user.setAge(25);
 
-console.log(user.getFullName());
+console.log(user.getFullName);
 // John Doe
 
 console.log(user.getAge());

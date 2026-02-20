@@ -9,9 +9,9 @@ export class Car {
         return console.log(`${this.brand} ${this.model} is accelerating...`)
     }
     brake(){
-        return console.log(`${this.brand} ${this.model} is brakeing...`)
+        return console.log(`${this.brand} ${this.model} is braking...`)
     }
     stop(){
-        return console.log(`${this.brand} ${this.model} is stoping...`)
+        return console.log(`${this.brand} ${this.model} is stopping...`)
     }
 }
