@@ -5,7 +5,7 @@
 ให้นักเรียนสร้าง 2 class ได้แก่
 
 - `Character` ในไฟล์ `character.ts` (parent class)
-- `Warrior` ในไฟล์ `warrior.ts` (child class ที่ `extends Character`)
+- `Warrior` ในไฟล์ `warrior.ts` (child class ที่ `extends Character`)v
 
 โดยต้องทำให้ไฟล์ `index.ts` ที่กำหนดให้ สามารถทำงานได้ถูกต้อง และได้ผลลัพธ์ตามที่คาดหวัง
 
