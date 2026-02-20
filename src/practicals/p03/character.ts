@@ -8,7 +8,7 @@ export class Character {
     getName(){
         return this.name
     }
-    getHealth(){
+    get getHealth():number{
         return this.getHealth
     }
     receiveDamage(damage: number){
