@@ -1,16 +1,16 @@
 export class User {
-  private firstname: string = "";
-  private lastname: string = "";
-  private age: number = 0;
+    firstname: string = "";
+    lastname: string = "";
+    private age: number = 0;
 
   static BIRTH_YEAR: number = 2000;
 
     setFirstname(firstname: string): void {
-    this.firstname = firstname;
+    this.firstname = firstname
   }
 
   setLastname(lastname: string): void {
-    this.lastname = lastname;
+    this.lastname = lastname
   }
 
   setAge(age: number): void {
@@ -22,6 +22,7 @@ export class User {
   }
 
   get getFullName(): string {
-    return `${this.firstname}${this.firstname && this.lastname ? " " : ""}${this.lastname}`;
+    if (!this.firstname && !this.lastname) return "";
+    return `${this.firstname} ${this.lastname}`;
   }
 }
